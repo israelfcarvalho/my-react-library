@@ -3,7 +3,7 @@
   "sideEffects": "**/*.scss",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/my-library.js",
   "scripts": {
     "build": "webpack --config ./config/webpack/webpack.prod.js",
     "storybook": "start-storybook -p 6006",
@@ -23,12 +23,18 @@
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@storybook/addon-actions": "^6.0.19",
     "@storybook/addon-essentials": "^6.0.19",
     "@storybook/addon-links": "^6.0.19",
+    "@storybook/preset-scss": "^1.0.2",
     "@storybook/react": "^6.0.19",
+    "@types/react": "^16.9.48",
+    "@types/webpack": "^4.41.21",
+    "@types/webpack-merge": "^4.1.5",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.2",
     "fork-ts-checker-webpack-plugin": "^5.1.0",
     "node-sass": "^4.14.1",
@@ -40,9 +46,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.10.4",
-    "@types/webpack": "^4.41.21",
-    "@types/webpack-merge": "^4.1.5",
+    "react": "^16.13.1",
     "webpack-merge": "^5.1.2"
   }
 }

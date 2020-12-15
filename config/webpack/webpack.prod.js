@@ -4,5 +4,12 @@ const webpackCommonConfig = require('./webpack.common');
 
 module.exports = merge(webpackCommonConfig, {
     mode: 'production',
-    devtool: 'source-map'
+    devtool: 'source-map',
+    externals: {
+        react: {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react'
+        }
+    }
 });
